@@ -1,8 +1,22 @@
 package com.solutions;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class SolutionOne {
     public int[] twoSum(int[] nums, int target) {
-         return null;
+        int[] answer = new int[2];
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(target - nums[i])) {
+                answer[0] = map.get(target - nums[i]);
+                answer[1] = i;
+                break;
+            } else {
+                map.put(nums[i], i);
+            }
+        }
+        return answer;
     }
 }
 
