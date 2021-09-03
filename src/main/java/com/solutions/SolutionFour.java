@@ -31,8 +31,7 @@ public class SolutionFour {
         if (amount % 2 == 1) {
             return (double) nums[amount / 2];
         } else {
-            double ans = (nums[amount / 2 - 1] + nums[amount / 2]) / 2.0;
-            return ans;
+            return (nums[amount / 2 - 1] + nums[amount / 2]) / 2.0;
         }
     }
 }
