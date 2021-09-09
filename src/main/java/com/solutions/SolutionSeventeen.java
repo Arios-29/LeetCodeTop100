@@ -26,6 +26,9 @@ public class SolutionSeventeen {
         //states[index]表示等待生成的状态
         int index = 1;
         for (int i = 0; i < digits.length(); i++) {
+            if(digits.charAt(i)=='1') {
+                continue;
+            }
             char[] tokens = map.get(digits.charAt(i));
             List<String> lastState = states.get(index - 1);
             List<String> newState = new ArrayList<>();
