@@ -4,7 +4,7 @@ import java.util.Stack;
 
 /**
  * @author ChenYu
- * @create 2021/9/9 17:11
+ * @date 2021/9/9 17:11
  */
 public class SolutionTwenty {
     public boolean isValid(String s) {
